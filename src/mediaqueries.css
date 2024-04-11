@@ -1,0 +1,245 @@
+@media screen and (max-width:670px)
+{
+    nav{
+        display: none;
+    }
+    .hamburger-nav{
+        display: block;
+    }
+    .header{
+        font-size: 16px;
+        line-height:2rem;
+    }
+    .brand{
+       font-size: 18px;
+       position: absolute; 
+       top: 3rem;
+    }
+    .title_section{
+        position: absolute;
+        top: 8rem;
+    }
+    .banner{
+        display: block;
+        width:100% ;
+        height: 600px;
+    }
+    .overlay{
+        height: 600px;
+    }
+    #about{
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-1{
+        width: 75%;
+        display: grid;
+        margin: 0 auto;
+        row-gap: 10px;
+    }
+    .grid-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .container-2{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about_header{
+        font-size: 24px;
+    }
+    .cutlery{
+       width: 2rem;
+    }
+    .experience{
+        display: flex;
+        gap: 1rem;
+    }
+    .years,.chefs{
+font-size: 40px;
+    }
+    .menu-list{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+    .form-container{
+       text-align: center;
+       padding: 1rem;
+    }
+    .dining-pic{
+        height: 80vh;
+    }
+    form{
+        margin: 0 auto;
+    }
+    .overlay2{
+        height: 80vh !important;
+    }
+    .feedback{
+        height: 70vh;
+    }
+    .slider{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+    footer{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .footer-1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #contact p{
+        text-align: center;
+    }
+    .contact-us{
+        width: 60%;
+        font-size: larger;
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (min-width: 680px) and (max-width: 1000px){
+    .nav{
+        display: flex;
+        gap: 5px;
+    }
+    .nav-links{
+        font-size: 15px;
+        padding: 0;
+     }
+     .logo{
+        font-size: 20px;
+     }
+     .signup{
+        padding: 5px;
+        font-size: 16px;
+        font-weight: 200;
+     }
+    .header{
+        font-size: 24px;
+        line-height:2rem;
+    }
+    .brand{
+       font-size: 30px;
+       position: absolute; 
+       top: 3rem;
+    }
+    .title_section{
+        position: absolute;
+        top: 8rem;
+    }
+    .banner{
+        display: block;
+        width:100% ;
+        height: 600px;
+    }
+    .overlay{
+        height: 600px;
+    }
+    #about{
+        height:45vh;
+        display: flex; 
+        padding: 2rem;
+        padding-bottom: 3rem; 
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+.container-1{
+    display: grid;
+    height: 60%;
+}
+.grid-img{
+    width: 100%;
+    height: 98%;
+    object-fit: cover;
+}
+    .container-2{
+        margin: 0 auto;
+    }
+    .about_header{
+        font-size: 24px;
+    }
+    .cutlery{
+       width: 2rem;
+    }
+    .experience{
+        display: flex;
+        gap: 1rem;
+    }
+    .years,.chefs{
+font-size: 40px;
+    }
+    .menu-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 0 3rem; 
+        align-content: center;
+    }
+    .menu_item{
+        width: 250px;
+    }
+    .menu_pic{
+        width: 250px;
+        height: 150px;
+    }
+    .form-container{
+     margin: 0 auto;
+    }
+    .dining-pic{
+        height: 60vh;
+    }
+    .overlay2{
+        height: 60vh !important;
+    }
+    .feedback{
+        height: 55vh;
+    }
+    .slider{
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+    footer{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .footer-1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #contact p{
+        text-align: center;
+    }
+    .contact-us{
+        width: 60%;
+        font-size: larger;
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1300px){
+    #about{
+        height: 100vh;
+    }
+    .overlay{
+        height: 83vh;
+    }
+    .feedback{
+        height: 100vh;
+    }
+    .dining-pic{
+        height: 100vh;
+    }
+    .overlay2{
+        height: 100vh !important;
+    }
+}
