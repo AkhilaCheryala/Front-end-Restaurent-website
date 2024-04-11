@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Form</title>
+<style>
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: rgb(76, 76, 76);
+        margin: 0;
+        color: white;
+    }
+    .error {
+        color: red;
+        font-size: small;
+        width: 200px; /* Fixed width for error message container */
+    }
+    form {
+       margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: 1rem;
+    }
+    input {
+        padding: 8px 15px;
+    }
+    h2 {
+        color: rgb(255,183,0);
+        text-decoration:underline;
+    }
+    .btn {
+        background-color: rgb(255,183,0);
+        padding: 10px 20px;
+        border: none;
+        font-weight: 600;
+    }
+    
+</style>
+</head>
+<body>
+
+<form id="signupForm" onsubmit="return validateForm()">
+    <h2>Sign Up Form</h2>
+    <div>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username">
+        <div id="u-msg" class="error"></div>
+    </div>
+    <div>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password">
+        <div id="p-msg" class="error"></div>
+    </div>
+    <div>
+        <button type="submit" class="btn">Sign Up</button>
+    </div>
+    
+
+</form>
+
+<script>
+function validateForm() {
+    document.getElementById('u-msg').innerText = '';
+    document.getElementById('p-msg').innerText = '';
+
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    if (username.trim() === '') {
+        document.getElementById('u-msg').innerText = 'Username is required';
+        return false;
+    }
+
+    // Password validation
+    if (password.trim() === '') {
+        document.getElementById('p-msg').innerText = 'Password is required';
+        return false;
+    } else if (password.length < 8) {
+        document.getElementById('p-msg').innerText = 'Password must be at least 6 characters long';
+        return false;
+    } else if (!/[A-Z]/.test(password)) {
+        document.getElementById('p-msg').innerText = 'Password must contain at least one uppercase letter';
+        return false;
+    } else if (!/[a-z]/.test(password)) {
+        document.getElementById('p-msg').innerText = 'Password must contain at least one lowercase letter';
+        return false;
+    } else if (!/\d/.test(password)) {
+        document.getElementById('p-msg').innerText = 'Password must contain at least one number';
+        return false;
+    } else if (!/\W/.test(password)) {
+        document.getElementById('p-msg').innerText = 'Password must contain at least one symbol';
+        return false;
+    }
+
+    
+    alert('Sign up successful!');
+    return true;
+}
+
+</script>
+
+</body>
+</html>

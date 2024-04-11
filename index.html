@@ -21,9 +21,15 @@
     <a href="#contact">Contact</a>
 </div>
 <div>
-    <button type="button" class="signup"><b>Signup</b></button>
+    <button type="button" onclick="showSignupForm()" class="signup"><b>Signup</b></button>
 </div>
     </nav>
+    
+      <iframe id="signupIframe" src="public/signup.html" width="100%" height="300px"  style="display: none;">
+        </iframe>
+        <button id="close" type="button" onclick="closeForm()">X</button>
+      
+    
     <div class="hamburger-nav">
         <div class="mobile-nav">
         <p class="logo">SIZZLE UP</p>
@@ -37,9 +43,9 @@
         <a href="#contact">Contact</a>
     </div>
     </div>
-    <div class="overlay"></div>
+   
     <main id="home">
-        <img src="public/banner(2).png" alt="" class="banner" />
+        <img src="public/banner.png" alt="" class="banner" />
         <div class="title_section">
             <p class="header">Elevate your <br>dining experience at <span class="brand">"Sizzle Up"</span> <br> where
                 flavor meets ambiance for <br>an
@@ -49,11 +55,11 @@
     </main>
     <section id="about">
         <div class="container-1">
-            <div class="pic-1"><img src="public/jason-leung-poI7DelFiVA-unsplash.jpg" alt="" class="grid-img" /></div>
-            <div class="pic-2"><img src="public/patrick-schneider-5xltWMpkN3E-unsplash.jpg" alt="" class="grid-img" />
+            <div class="pic-1 pic"><img src="public/jason-leung-poI7DelFiVA-unsplash.jpg" alt="" class="grid-img" /></div>
+            <div class="pic-2 pic"><img src="public/patrick-schneider-5xltWMpkN3E-unsplash.jpg" alt="" class="grid-img" />
             </div>
-            <div class="pic-3"><img src="public/volkan-vardar-1H30uRC1plc-unsplash.jpg" alt="" class="grid-img" /></div>
-            <div class="pic-4"><img src="public/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="grid-img" />
+            <div class="pic-3 pic"><img src="public/volkan-vardar-1H30uRC1plc-unsplash.jpg" alt="" class="grid-img" /></div>
+            <div class="pic-4 pic"><img src="public/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="grid-img" />
             </div>
         </div>
         <div class="container-2">
@@ -160,9 +166,9 @@
         </div>
     </section>
     <section id="services">
-        <div class="overlay2"></div>
+        
         <div>
-            <img src="public/hitesh-dewasi-5JwBbnyZzfc-unsplash.jpg" alt="" class="dining-pic" />
+            <img src="public/banneragain.png" alt="" class="dining-pic" />
         </div>
         <div class="form-container">
             <p>Book now---</p>

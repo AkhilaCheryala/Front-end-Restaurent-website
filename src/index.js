@@ -24,3 +24,15 @@ const slides = document.querySelectorAll('.slide');
       showSlide(index);
     });
     });
+
+
+// iframe 
+    function showSignupForm() {
+      document.getElementById('signupIframe').src = 'public/signup.html';
+      document.getElementById('signupIframe').style.display = 'block';
+      document.getElementById('close').style.display = 'block';
+  }
+ function closeForm(){
+  document.getElementById('signupIframe').style.display = 'none';
+  document.getElementById('close').style.display = 'none';
+ }
