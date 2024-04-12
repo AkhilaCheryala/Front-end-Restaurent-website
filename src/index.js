@@ -1,9 +1,9 @@
+// hamburger nav
 function toggleNav() {
     var navLinksMobile = document.querySelector('.nav-links-mobile');
-    // Toggle the display of navigation links
     navLinksMobile.style.display = navLinksMobile.style.display === 'none' ? 'block' : 'none';
   }
-  
+  //feedback 
 const slides = document.querySelectorAll('.slide');
   const radioBtns = document.querySelectorAll('.radio-btn input');
   showSlide(0);
@@ -36,3 +36,17 @@ const slides = document.querySelectorAll('.slide');
   document.getElementById('signupIframe').style.display = 'none';
   document.getElementById('close').style.display = 'none';
  }
+ document.addEventListener("DOMContentLoaded", function() {
+  const viewMoreButton = document.querySelector('.view_more');
+  const menuContainer = document.querySelector('.menu-container');
+
+// view more button
+  viewMoreButton.addEventListener('click', function() {
+      menuContainer.classList.toggle('expanded');
+      if (menuContainer.classList.contains('expanded')) {
+          viewMoreButton.textContent = 'View Less';
+      } else {
+          viewMoreButton.textContent = 'View More';
+      }
+  });
+});

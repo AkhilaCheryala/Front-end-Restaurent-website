@@ -8,57 +8,62 @@
     <link rel="icon" href="/public/favicon.png" />
     <link rel="stylesheet" href="/src/index.css" />
     <link rel="stylesheet" href="/src/mediaqueries.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body>
     <nav>
         <p class="logo">SIZZLE UP</p>
-<div class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#menu">Menu</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-</div>
-<div>
-    <button type="button" onclick="showSignupForm()" class="signup"><b>Signup</b></button>
-</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div>
+            <button type="button" onclick="showSignupForm()" class="signup"><b>Signup</b></button>
+        </div>
     </nav>
-    
-      <iframe id="signupIframe" src="public/signup.html" width="100%" height="300px"  style="display: none;">
-        </iframe>
-        <button id="close" type="button" onclick="closeForm()">X</button>
-      
-    
+
+    <iframe id="signupIframe" src="public/signup.html" width="100%" height="300px" style="display: none;">
+    </iframe>
+    <button id="close" type="button" onclick="closeForm()">X</button>
+
+
     <div class="hamburger-nav">
         <div class="mobile-nav">
-        <p class="logo">SIZZLE UP</p>
-        <div onclick="toggleNav()"><img src="public/list.png"alt='' class="list"></div>
-      </div>
-      <div class="nav-links-mobile">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+            <p class="logo">SIZZLE UP</p>
+            <div onclick="toggleNav()"><i class="bi bi-list" style="font-size: 3rem;"></i></div>
+        </div>
+        <div class="nav-links-mobile">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
-    </div>
-   
+
     <main id="home">
         <img src="public/banner.png" alt="" class="banner" />
         <div class="title_section">
             <p class="header">Elevate your <br>dining experience at <span class="brand">"Sizzle Up"</span> <br> where
                 flavor meets ambiance for <br>an
                 unforgettable culinary journey.</p>
-            <button type="button" class="explore">Explore</button>
+            <button type="button" class="explore">Explore <i class="bi bi-arrow-right-short"></i></button>
         </div>
     </main>
     <section id="about">
         <div class="container-1">
-            <div class="pic-1 pic"><img src="public/jason-leung-poI7DelFiVA-unsplash.jpg" alt="" class="grid-img" /></div>
-            <div class="pic-2 pic"><img src="public/patrick-schneider-5xltWMpkN3E-unsplash.jpg" alt="" class="grid-img" />
+            <div class="pic-1 pic"><img src="public/jason-leung-poI7DelFiVA-unsplash.jpg" alt="" class="grid-img" />
             </div>
-            <div class="pic-3 pic"><img src="public/volkan-vardar-1H30uRC1plc-unsplash.jpg" alt="" class="grid-img" /></div>
+            <div class="pic-2 pic"><img src="public/patrick-schneider-5xltWMpkN3E-unsplash.jpg" alt=""
+                    class="grid-img" />
+            </div>
+            <div class="pic-3 pic"><img src="public/volkan-vardar-1H30uRC1plc-unsplash.jpg" alt="" class="grid-img" />
+            </div>
             <div class="pic-4 pic"><img src="public/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="grid-img" />
             </div>
         </div>
@@ -96,77 +101,145 @@
             <p>Menu</p>
             <h2>"Explore Our Exquisite Menu Selections"</h2>
         </div>
-        <div class="menu-list">
-            <div class="menu_item">
-                <img src="public/pizza2.jpg" alt="" class="menu_pic" />
-                <div class="menu_text">
-                    <h3 class="menu_header">CrustCraze</h3>
-                    <p class="menu_price"> $49.80 </p>
+        <div class="menu-container">
+            <div class="menu-list">
+                <div class="menu_item">
+                    <img src="public/pizza2.jpg" alt="" class="menu_pic" />
+                    <div class="menu_text">
+                        <h3 class="menu_header">CrustCraze</h3>
+                        <p class="menu_price"> $49.80 </p>
+                    </div>
+                    <p class="item_des"> Layers of meats, cheesy heaven in every bite.</p>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <p>4.5</p>
+                    </div>
                 </div>
-                <p class="item_des"> Layers of meats, cheesy heaven in every bite.</p>
+                <div class="menu_item">
+                    <img src="public/thomas-tucker-MNtag_eXMKw-unsplash.jpg" alt="" class="menu_pic" />
+                    <div class="menu_text">
+                        <h3 class="menu_header">Margharita</h3>
+                        <p class="menu_price"> $37.00 </p>
+                    </div>
+                    <p class="item_des">Fresh mozzarella, tomato, basil. Simply delightful.</p>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <p>3.5</p>
+                    </div>
+                </div>
+                <div class="menu_item">
+                    <img src="public/easy-pizza-toast-4.jpg" alt="" class="menu_pic" />
+                    <div class="menu_text">
+                        <h3 class="menu_header">Pepperoni</h3>
+                        <p class="menu_price"> $35.75 </p>
+                    </div>
+                    <p class="item_des">Loaded with spicy pepperoni,cheese, perfect crust.</p>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <p>4.5</p>
+                    </div>
+                </div>
+                <div class="menu_item">
+                    <img src="public/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="" class="menu_pic" />
+                    <div class="menu_text">
+                        <h3 class="menu_header">Veggie Delight</h3>
+                        <p class="menu_price"> $43.99 </p>
+                    </div>
+                    <p class="item_des">Abundant veggies,healthy and guilt-free indulgence.</p>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <p>2.5</p>
+                    </div>
+                </div>
             </div>
-            <div class="menu_item">
-                <img src="public/thomas-tucker-MNtag_eXMKw-unsplash.jpg" alt="" class="menu_pic" />
-                <div class="menu_text">
-                    <h3 class="menu_header">Margharita</h3>
-                    <p class="menu_price"> $37.00 </p>
+            <div class="menu-list">
+                <div class="menu_item">
+                    <img src="public/creative-headline-F10nTHkCiW8-unsplash.jpg" alt="" class="menu_pic" />
+                    <div class="menu_text">
+                        <h3 class="menu_header">Classic Wrap</h3>
+                        <p class="menu_price"> $49.80 </p>
+                    </div>
+                    <p class="item_des"> A handheld fiesta sensation</p>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <p>3.5</p>
+                    </div>
                 </div>
-                <p class="item_des">Fresh mozzarella, tomato, basil. Simply delightful.</p>
-            </div>
-            <div class="menu_item">
-                <img src="public/easy-pizza-toast-4.jpg" alt="" class="menu_pic" />
-                <div class="menu_text">
-                    <h3 class="menu_header">Pepperoni Paradise</h3>
-                    <p class="menu_price"> $35.75 </p>
+                <div class="menu_item">
+                    <img src="public/lindsay-moe-MWfUVW6_JkE-unsplash.jpg" alt="" class="menu_pic" />
+                    <div class="menu_text">
+                        <h3 class="menu_header">TwirlTreat</h3>
+                        <p class="menu_price"> $37.00 </p>
+                    </div>
+                    <p class="item_des">Al dente noodles swirled in rich, savory sauce.</p>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <p>4.5</p>
+                    </div>
                 </div>
-                <p class="item_des">Loaded with spicy pepperoni,cheese, perfect crust.</p>
-            </div>
-            <div class="menu_item">
-                <img src="public/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="" class="menu_pic" />
-                <div class="menu_text">
-                    <h3 class="menu_header">Veggie Delight</h3>
-                    <p class="menu_price"> $43.99 </p>
+                <div class="menu_item">
+                    <img src="public/micheile-henderson-0fyS-gk0h4w-unsplash.jpg" alt="" class="menu_pic" />
+                    <div class="menu_text">
+                        <h3 class="menu_header">Sizzly Corn</h3>
+                        <p class="menu_price"> $35.75 </p>
+                    </div>
+                    <p class="item_des">Buttery creamy corn, Cheesy and crispy in first bite</p>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <p>3.5</p>
+                    </div>
                 </div>
-                <p class="item_des">Abundant veggies, guilt-free indulgence.</p>
+                <div class="menu_item">
+                    <img src="public/scott-eckersley-R-7_ErUOLxw-unsplash.jpg" alt="" class="menu_pic" />
+                    <div class="menu_text">
+                        <h3 class="menu_header">Delishus Wings</h3>
+                        <p class="menu_price"> $43.99 </p>
+                    </div>
+                    <p class="item_des"> crispy perfection, dripping in savory sauces.</p>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <p>3.0</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="menu-list">
-            <div class="menu_item">
-                <img src="public/creative-headline-F10nTHkCiW8-unsplash.jpg" alt="" class="menu_pic" />
-                <div class="menu_text">
-                    <h3 class="menu_header">Classic Wrap</h3>
-                    <p class="menu_price"> $49.80 </p>
-                </div>
-                <p class="item_des"> A handheld fiesta sensation</p>
-            </div>
-            <div class="menu_item">
-                <img src="public/lindsay-moe-MWfUVW6_JkE-unsplash.jpg" alt="" class="menu_pic" />
-                <div class="menu_text">
-                    <h3 class="menu_header">TwirlTreat</h3>
-                    <p class="menu_price"> $37.00 </p>
-                </div>
-                <p class="item_des">Al dente noodles swirled in rich, savory sauce.</p>
-            </div>
-            <div class="menu_item">
-                <img src="public/micheile-henderson-0fyS-gk0h4w-unsplash.jpg" alt="" class="menu_pic" />
-                <div class="menu_text">
-                    <h3 class="menu_header">Sizzly Corn</h3>
-                    <p class="menu_price"> $35.75 </p>
-                </div>
-                <p class="item_des">Cheesy and crispy in first bite</p>
-            </div>
-            <div class="menu_item">
-                <img src="public/scott-eckersley-R-7_ErUOLxw-unsplash.jpg" alt="" class="menu_pic" />
-                <div class="menu_text">
-                    <h3 class="menu_header">Delishus Wings</h3>
-                    <p class="menu_price"> $43.99 </p>
-                </div>
-                <p class="item_des"> crispy perfection, dripping in savory sauces.</p>
-            </div>
-        </div>
+        <button type="button" class="view_more">View More</button>
+
     </section>
     <section id="services">
-        
+
         <div>
             <img src="public/banneragain.png" alt="" class="dining-pic" />
         </div>
@@ -245,16 +318,16 @@
         <div class="radio-btn">
             <input type="radio" name="slide" id="slide-1" />
             <input type="radio" name="slide" id="slide-2" />
-            <input type="radio" name="slide"  id="slide-3" checked/>
-            <input type="radio" name="slide" id="slide-4"/>
-            <input type="radio" name="slide" id="slide-5"/>
+            <input type="radio" name="slide" id="slide-3" checked />
+            <input type="radio" name="slide" id="slide-4" />
+            <input type="radio" name="slide" id="slide-5" />
         </div>
     </section>
     <section id="contact">
         <p>Contact Us</p>
         <footer>
             <div class="contact-us">
-                <input type="email" name="email" placeholder="Your Email" class="contact-mail"/>
+                <input type="email" name="email" placeholder="Your Email" class="contact-mail" />
                 <button type="submit" class="subscribe">Subscribe</button>
             </div>
             <div class="footer-1">
@@ -299,8 +372,14 @@
     </section>
     <div class="final-line">
         <p> COPYRIGHT &#169 1997-2024|Privacy Policy.</p>
+        <div class="icons">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-telegram"></i>
+        </div>
     </div>
-    
+
 </body>
 <script src="src/index.js"></script>
 
